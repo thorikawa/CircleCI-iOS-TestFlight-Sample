@@ -2,6 +2,7 @@
 Demonstrate how to deploy an iOS app automatically to testflight using CircleCI.
 
 ## How to set up your project
+0. Since CircleCI iOS build is still beta, you need to contact CircleCI guys to enable iOS build. Please see https://circleci.com/docs/ios for detail.
 1. Copy the circle.yml into your repo (replace xcode scheme, xcode workspace, app name, developer name, provisionin profile uuid and testflight distribution list)
 2. Create the folder "scripts/"
 3. Export the following things from the Keychain app
