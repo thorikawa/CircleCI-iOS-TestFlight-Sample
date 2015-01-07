@@ -9,9 +9,7 @@ DSYM_DIR="$ARCHIVE_PATH/dSYMs"
 echo "********************"
 echo "*     Archive      *"
 echo "********************"
-# xcodebuild -scheme "$XCODE_SCHEME" -workspace "$XCODE_WORKSPACE" install DSTROOT=build
-# xcodebuild -scheme "$XCODE_SCHEME" -workspace "$XCODE_WORKSPACE" -sdk iphoneos clean install DSTROOT=build DEBUG_INFORMATION_FORMAT="dwarf-with-dsym" CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY= PROVISIONING_PROFILE=
-xcodebuild -scheme "$XCODE_SCHEME" -workspace "$XCODE_WORKSPACE" -archivePath "$ARCHIVE_PATH" clean archive
+xcodebuild -scheme "$XCODE_SCHEME" -workspace "$XCODE_WORKSPACE" -archivePath "$ARCHIVE_PATH" clean archive CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY= PROVISIONING_PROFILE=
 
 echo "********************"
 echo "*     Signing      *"
