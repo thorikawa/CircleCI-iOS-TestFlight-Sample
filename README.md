@@ -21,3 +21,6 @@ https://circleci.com/gh/infolens/CircleCI-iOS-TestFlight-Sample/11
 
 ## Acknowledgement
 I created this sample in reference to [Johannes's work for Travis CI](https://gist.github.com/johanneswuerbach/5559514). Great work Johannes!
+
+## License
+MIT License except for scripts/dist.cer, scripts/dist.cer, scripts/apple.cer and scripts/profile folder.
