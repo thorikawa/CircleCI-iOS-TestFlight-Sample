@@ -2,7 +2,7 @@ machine:
   environment:
     XCODE_SCHEME: CircleCI-Sample
     XCODE_WORKSPACE: CircleCI-Sample.xcworkspace
-    DEVELOPER_NAME: 'iPhone Distribution: INFOLENS INC. (PP934WJN3M)'
+    DEVELOPER_NAME: 'iPhone Distribution: Takahiro Horikawa (HSM2AYDCY3)'
     APPNAME: CircleCI-Sample
     PROFILE_UUID: 30fc0261-b07e-421a-8b11-ae29168827d2
     TESTFLIGHT_DIST_LIST: your-dist-list-name
