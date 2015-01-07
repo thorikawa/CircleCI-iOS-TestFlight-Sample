@@ -9,7 +9,7 @@ DSYM_DIR="$ARCHIVE_PATH/dSYMs"
 echo "********************"
 echo "*     Archive      *"
 echo "********************"
-xcodebuild -scheme "$XCODE_SCHEME" -workspace "$XCODE_WORKSPACE" -archivePath "$ARCHIVE_PATH" clean archive CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY= PROVISIONING_PROFILE=
+xcodebuild -scheme "$XCODE_SCHEME" -workspace "$XCODE_WORKSPACE" -archivePath "$ARCHIVE_PATH" clean archive CODE_SIGN_IDENTITY="$DEVELOPER_NAME"
 
 echo "********************"
 echo "*     Signing      *"
