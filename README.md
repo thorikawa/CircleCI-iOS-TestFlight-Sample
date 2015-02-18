@@ -17,6 +17,7 @@ https://circleci.com/gh/infolens/CircleCI-iOS-TestFlight-Sample/11
   1. KEY_PASSWORD=YOUR_KEY_PASSWORD
   2. TEAM_TOKEN=TESTFLIGHT_TEAM_TOKEN
   3. API_TOKEN=TESTFLIGHT_API_TOKEN
+  <br /><img src="http://farm8.staticflickr.com/7449/15948699543_a6e6580175_b.jpg" width="360" />
 6. Copy add-key.sh, remove-key.sh and testflight.sh into scripts/
 
 ## Acknowledgement
