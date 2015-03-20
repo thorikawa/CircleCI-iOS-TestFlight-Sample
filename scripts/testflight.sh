@@ -20,13 +20,14 @@ RELEASE_NOTES="Build: $CIRCLE_BUILD_NUM\nUploaded: $RELEASE_DATE"
 
 zip -r -9 "$DSYM_DIR/$APPNAME.app.dSYM.zip" "$DSYM_DIR/$APPNAME.app.dSYM"
 
-echo "********************"
-echo "*    Uploading     *"
-echo "********************"
-curl http://testflightapp.com/api/builds.json \
-  -F file="@$APP_DIR/$APPNAME.ipa" \
-  -F dsym="@$DSYM_DIR/$APPNAME.app.dSYM.zip" \
-  -F api_token="$API_TOKEN" \
-  -F team_token="$TEAM_TOKEN" \
-  -F distribution_lists="$TESTFLIGHT_DIST_LIST" \
-  -F notes="$RELEASE_NOTES" -v
+# echo "********************"
+# echo "*    Uploading     *"
+# echo "********************"
+# curl http://testflightapp.com/api/builds.json \
+#   -F file="@$APP_DIR/$APPNAME.ipa" \
+#   -F dsym="@$DSYM_DIR/$APPNAME.app.dSYM.zip" \
+#   -F api_token="$API_TOKEN" \
+#   -F team_token="$TEAM_TOKEN" \
+#   -F distribution_lists="$TESTFLIGHT_DIST_LIST" \
+#   -F notes="$RELEASE_NOTES" -v
+
