@@ -12,7 +12,7 @@ dependencies:
         timeout: 300
 test:
   override:
-    - xcodebuild test -workspace CircleCI-Sample.xcworkspace -scheme CircleCI-Sample -configuration Release -destination 'name=iPhone 5'
+    - xctool -workspace CircleCI-Sample.xcworkspace -scheme CircleCI-Sample -sdk iphonesimulator test
 deployment:
   testflight:
     branch: master
