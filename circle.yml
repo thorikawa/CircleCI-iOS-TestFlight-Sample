@@ -10,6 +10,9 @@ dependencies:
   override:
     - pod install:
         timeout: 300
+test:
+  override:
+    - xcodebuild test -workspace CircleCI-Sample.xcworkspace -scheme CircleCI-Sample -configuration Release -destination 'name=iPhone 5'
 deployment:
   testflight:
     branch: master
