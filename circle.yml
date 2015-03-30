@@ -12,9 +12,9 @@ test:
   override:
     - xctool -workspace CircleCI-Sample.xcworkspace -scheme CircleCI-Sample -sdk iphonesimulator clean build test
 deployment:
-  testflight:
+  deploygate:
     branch: master
     commands:
       - ./scripts/add-key.sh
-      - ./scripts/testflight.sh
+      - ./scripts/deploygate.sh
       - ./scripts/remove-key.sh
