@@ -15,7 +15,8 @@ xcodebuild -scheme "$XCODE_SCHEME" -workspace "$XCODE_WORKSPACE" -archivePath "$
 echo "********************"
 echo "*     Signing      *"
 echo "********************"
-xcrun -log -sdk iphoneos PackageApplication "$APP_DIR/$APPNAME.app" -o "$APP_DIR/$APPNAME.ipa" -sign "$DEVELOPER_NAME" -embed "$PROVISIONING_PROFILE"
+#xcrun -log -sdk iphoneos PackageApplication "$APP_DIR/$APPNAME.app" -o "$APP_DIR/$APPNAME.ipa" -sign "$DEVELOPER_NAME" -embed "$PROVISIONING_PROFILE"
+xcrun -sdk iphoneos PackageApplication -v  "$APP_DIR/$APPNAME.app" -o "$APP_DIR/$APPNAME.ipa"
 
 #RELEASE_NOTES="Build: $CIRCLE_BUILD_NUM\nUploaded: $RELEASE_DATE"
 
