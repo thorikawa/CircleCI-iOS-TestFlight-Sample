@@ -10,6 +10,8 @@ dependencies:
   override:
     - pod install:
         timeout: 300
+  cache_directories:
+	- "Pods"
 deployment:
   testflight:
     branch: master
