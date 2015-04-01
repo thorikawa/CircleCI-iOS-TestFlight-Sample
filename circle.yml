@@ -10,10 +10,5 @@ dependencies:
   override:
     - pod install:
         timeout: 300
-deployment:
-  testflight:
-    branch: master
-    commands:
-      - ./scripts/add-key.sh
-      - ./scripts/testflight.sh
-      - ./scripts/remove-key.sh
+  cache_directories:
+    - "Pods"
