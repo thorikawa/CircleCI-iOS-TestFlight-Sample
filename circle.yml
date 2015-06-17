@@ -8,9 +8,11 @@ machine:
     TESTFLIGHT_DIST_LIST: your-dist-list-name
 dependencies:
   override:
-    - git clone https://git.chromium.org/external/googletest.git
     - pod install:
         timeout: 300
+checkout:
+  post:
+    - git clone https://git.chromium.org/external/googletest.git
 deployment:
   testflight:
     branch: master
