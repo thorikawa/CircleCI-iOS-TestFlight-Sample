@@ -8,9 +8,6 @@ machine:
     TESTFLIGHT_DIST_LIST: your-dist-list-name
   post:
     - rm ~/$CIRCLE_PROJECT_REPONAME/package.json
-dependencies:
-  pre:
-    - rm package.json
 deployment:
   testflight:
     branch: master
