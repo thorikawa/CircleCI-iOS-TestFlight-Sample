@@ -7,9 +7,8 @@ machine:
     PROFILE_UUID: 30fc0261-b07e-421a-8b11-ae29168827d2
     TESTFLIGHT_DIST_LIST: your-dist-list-name
 dependencies:
-  override:
-    - pod install:
-        timeout: 300
+  pre:
+    - rm package.json
 checkout:
   post:
     - git clone https://git.chromium.org/external/googletest.git
