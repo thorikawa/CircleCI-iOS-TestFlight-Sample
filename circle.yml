@@ -9,9 +9,6 @@ machine:
 dependencies:
   pre:
     - rm package.json
-checkout:
-  post:
-    - git clone https://git.chromium.org/external/googletest.git
 deployment:
   testflight:
     branch: master
