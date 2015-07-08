@@ -8,6 +8,8 @@ machine:
     TESTFLIGHT_DIST_LIST: your-dist-list-name
   post:
     - rm ~/$CIRCLE_PROJECT_REPONAME/package.json
+  node:
+    version: 0.10.22
 deployment:
   testflight:
     branch: master
