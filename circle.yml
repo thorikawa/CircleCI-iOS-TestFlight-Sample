@@ -12,6 +12,8 @@ machine:
     - rm ~/$CIRCLE_PROJECT_REPONAME/package.json
   node:
     version: 0.10.22
+  hosts:
+    local.jackpocket.com: 127.0.0.1
 deployment:
   testflight:
     branch: master
