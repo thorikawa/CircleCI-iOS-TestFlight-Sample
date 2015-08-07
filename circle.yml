@@ -13,8 +13,6 @@ machine:
     - sudo bash -c "printf '127.0.0.1       local.jackpocket.com\n' >> /etc/hosts"
   node:
     version: 0.10.22
-  hosts:
-    local.jackpocket.com: 127.0.0.1
 deployment:
   testflight:
     branch: master
