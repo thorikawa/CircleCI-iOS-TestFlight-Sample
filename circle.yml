@@ -10,6 +10,7 @@ machine:
     TESTFLIGHT_DIST_LIST: your-dist-list-name
   post:
     - rm ~/$CIRCLE_PROJECT_REPONAME/package.json
+    - sudo bash -c "printf '127.0.0.1       local.jackpocket.com\n' >> /etc/hosts"
   node:
     version: 0.10.22
   hosts:
