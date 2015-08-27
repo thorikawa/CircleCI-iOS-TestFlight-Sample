@@ -8,14 +8,14 @@ machine:
     APPNAME: CircleCI-Sample
     PROFILE_UUID: 30fc0261-b07e-421a-8b11-ae29168827d2
     TESTFLIGHT_DIST_LIST: your-dist-list-name
-  override:
-    - echo "This is an override"
   post:
     - rm ~/$CIRCLE_PROJECT_REPONAME/package.json
     - sudo bash -c "printf '127.0.0.1       local.jackpocket.com\n' >> /etc/hosts"
     - cat /etc/hosts
   node:
     version: 0.10.22
+  xcode:
+    version: 6.4
 deployment:
   testflight:
     branch: master
