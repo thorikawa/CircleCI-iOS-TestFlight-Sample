@@ -15,7 +15,7 @@ machine:
   node:
     version: 0.10.22
   xcode:
-    version: '"6.4"'
+    version: 6.4
   java:
     version: openjdk7
 deployment:
