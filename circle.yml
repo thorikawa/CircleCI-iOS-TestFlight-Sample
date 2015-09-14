@@ -15,11 +15,7 @@ machine:
   node:
     version: 0.10.22
   xcode:
-<<<<<<< HEAD
     version: "6.4"
-=======
-    version: '"6.4"'
->>>>>>> parent of 4713024... try without quotes
   java:
     version: openjdk7
 deployment:
