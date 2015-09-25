@@ -1,6 +1,6 @@
 machine:
   pre:
-    - curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.25.4/install.sh | bash
+    - brew install nvm
   environment:
     XCODE_SCHEME: CircleCI-Sample
     XCODE_WORKSPACE: CircleCI-Sample.xcworkspace
