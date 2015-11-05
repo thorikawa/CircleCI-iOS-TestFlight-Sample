@@ -1,6 +1,7 @@
 machine:
   pre:
     - brew install nvm
+    - echo $PATH
   environment:
     XCODE_SCHEME: CircleCI-Sample
     XCODE_WORKSPACE: CircleCI-Sample.xcworkspace
