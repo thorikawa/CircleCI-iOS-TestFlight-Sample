@@ -16,4 +16,3 @@ deployment:
     commands:
       - ./scripts/add-key.sh
       - ./scripts/testflight.sh
-      - ./scripts/remove-key.sh
