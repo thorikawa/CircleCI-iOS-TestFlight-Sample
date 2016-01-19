@@ -26,3 +26,6 @@ deployment:
       - ./scripts/add-key.sh
       - ./scripts/testflight.sh
       - ./scripts/remove-key.sh
+test:
+  override:
+    - echo "no tests"
