@@ -16,8 +16,6 @@ machine:
     - rm ~/$CIRCLE_PROJECT_REPONAME/package.json
     - sudo bash -c "printf '127.0.0.1       local.jackpocket.com\n' >> /etc/hosts"
     - cat /etc/hosts
-  node:
-    version: 0.10.22
   xcode:
     version: 7.2
 deployment:
