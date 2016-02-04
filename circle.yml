@@ -30,4 +30,17 @@ deployment:
       - ./scripts/remove-key.sh
 test:
   override:
-    - echo "no tests"   
+    - |
+      if [ -z $CI_PULL_REQUEST ] ; then \
+      xctool \
+      -reporter pretty \
+      CODE_SIGNING_REQUIRED=NO \
+      CODE_SIGN_IDENTITY= \
+      PROVISIONING_PROFILE= \
+      -destination 'platform=iOS Simulator,name=iPhone 6,OS=latest' \
+      -sdk iphonesimulator \
+      -workspace AtticGem.xcworkspace \
+      -scheme AtticGemTests \
+      -configuration Debug \
+      clean test; \
+      fi
