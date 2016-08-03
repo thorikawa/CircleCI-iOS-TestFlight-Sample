@@ -24,13 +24,13 @@ machine:
 dependencies:
   override:
     - echo "do nothing"
-deployment:
-  testflight:
-    branch: master
-    commands:
-      - ./scripts/add-key.sh
-      - ./scripts/testflight.sh
-      - ./scripts/remove-key.sh
+# deployment:
+#   testflight:
+#     branch: master
+#     commands:
+#       - ./scripts/add-key.sh
+#       - ./scripts/testflight.sh
+#       - ./scripts/remove-key.sh
 test:
   override:
     - echo "no tests"
